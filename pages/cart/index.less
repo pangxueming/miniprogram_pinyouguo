@@ -1,0 +1,171 @@
+/* pages/cart/index.wxss */
+
+page {
+  padding-bottom: 90rpx;
+}
+
+.recive_address_row {
+  .address_btn {
+    padding: 20rpx;
+
+    button {
+      width: 60%;
+    }
+  }
+
+  .address_info_row {
+    display: flex;
+    padding: 20rpx;
+
+    .address_info {
+      flex: 5;
+
+      .userName {
+        margin-bottom: 10rpx;
+      }
+
+      .detailAddress {}
+    }
+
+    .telNumber {
+      flex: 3;
+      text-align: right;
+    }
+  }
+}
+
+.cart_content {
+  .cart_title {
+    padding: 20rpx;
+    font-size: 36rpx;
+    color: #333;
+    font-weight: 600;
+    border-top: 1rpx solid var(--themeColor);
+    border-bottom: 1rpx solid var(--themeColor);
+  }
+
+  .cart_main {
+    display: flex;
+    padding: 10rpx;
+    border-bottom: 1px solid #ccc;
+
+    .cart_item {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10rpx 0;
+
+      .cart_chk_wrap {
+        checkbox-group {
+          checkbox {}
+        }
+      }
+    }
+
+    navigator.cart_img_wrap {
+      flex: 2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      image {
+        width: 80%;
+      }
+    }
+
+    .cart_info_wrap {
+      flex: 4;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      .goods_name {
+        display: -webkit-box;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        color: #666;
+      }
+
+      .good_price_wrap {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 40rpx;
+
+        .goods_price {
+          color: var(--themeColor);
+          font-size: 34rpx;
+        }
+
+        .cart_num_tool {
+          display: flex;
+          flex-direction: row;
+
+          .num_edit {
+            height: 50rpx;
+            width: 50rpx;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border: 1px solid #ccc;
+          }
+
+          .cart_num {
+            height: 50rpx;
+            width: 50rpx;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer_tool {
+  display: flex;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 90rpx;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+
+  .all_chk_wrap {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .total_price_wrap {
+    flex: 4;
+    text-align: right;
+    padding-right: 20rpx;
+
+    .total_price {
+      .total_price_text {
+        color: var(--themeColor);
+        font-size: 34rpx;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .order_pay_wrap {
+    flex: 2;
+    background-color: var(--themeColor);
+    font-size: 32rpx;
+    color: #fff;
+    text-align: center;
+    line-height: 90rpx;
+    font-weight: 600;
+
+  }
+}
